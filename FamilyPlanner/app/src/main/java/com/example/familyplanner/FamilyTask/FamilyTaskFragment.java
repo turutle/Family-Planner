@@ -41,7 +41,6 @@ public class FamilyTaskFragment extends Fragment {
     private ComDBHelper comDBHelper;
     private SQLiteDatabase sqLiteDatabase;
     private ContentValues contentValues;
-    private Cursor cursor;
 
 
     private String id;
@@ -320,12 +319,10 @@ public class FamilyTaskFragment extends Fragment {
                     familyTaskAdapter.notifyDataSetChanged();
                 } while (c.moveToNext());
             } else
-
                 c.close();
-            comDBHelper.close();
-        } catch (Exception e) {
 
-        }
+            comDBHelper.close();
+        } catch (Exception e) { }
     }
 
 }
