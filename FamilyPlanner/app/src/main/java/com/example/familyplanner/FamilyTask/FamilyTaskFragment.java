@@ -178,7 +178,7 @@ public class FamilyTaskFragment extends Fragment {
                 famNumberTextView = famInfoDialog.findViewById(R.id.fam_num_tv);
 
                 if (familyTaskAdapter.getItem(position).getFam_task_topic().equals("")) {
-                    famTopicTextView.setText("Без темы'");
+                    famTopicTextView.setText("Без темы");
                 } else {
                     famTopicTextView.setText(familyTaskAdapter.getItem(position).getFam_task_topic());
                 }
